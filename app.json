@@ -1,25 +1,46 @@
 {
   "expo": {
-    "name": "FitTrackPro",
-    "slug": "FitTrackPro",
+    "name": "FitTrack Pro",
+    "slug": "fittrack-pro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
+    "splash": {
+      "backgroundColor": "#007AFF"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#007AFF"
       },
-      "predictiveBackGestureEnabled": false
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.dharmonjames.fittrackpro"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+    "androidNavigationBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow FitTrack Pro to access your photos",
+          "cameraPermission": "Allow FitTrack Pro to use your camera"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9d6e8b72-44fa-42be-a088-4048753eeb9f"
+      }
     }
   }
 }
